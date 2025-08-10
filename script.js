@@ -8,8 +8,8 @@ let filmesAdicionados = [
         genero: "Distopia",
         descricao: "Em um futuro distópico, Katniss Everdeen se voluntaria para participar dos Jogos Vorazes, uma competição mortal televisionada onde jovens lutam até a morte para entreter a elite da Capital.",
         imagem: "https://occ-0-8407-2219.1.nflxso.net/dnm/api/v6/Z-WHgqd_TeJxSuha8aZ5WpyLcX8/AAAABT_8mnmw07ngPioKmJwzsiylClB7S99p2x947MAntA4pb2tqnmj0gJL4oB4PNTPZSjnvXLTDvLhQTRyN-2edyiTVYBveELJgGScf.jpg?r=691",
-        gostei: 0,
-        naoGostei: 0
+        gostei: 3,
+        naoGostei: 2
     },
     {
         id: Date.now() + 2,
@@ -17,8 +17,8 @@ let filmesAdicionados = [
         genero: "Distopia",
         descricao: "Após vencer os Jogos, Katniss e Peeta tornam-se símbolos de rebelião e são forçados a participar de uma edição especial que ameaça reacender a revolta nos distritos.",
         imagem: "https://www.planocritico.com/wp-content/uploads/2013/11/jogos-vorazes-em-chamas-imagem-destacada.jpg",
-        gostei: 0,
-        naoGostei: 0
+        gostei: 6,
+        naoGostei: 5
     },
     {
         id: Date.now() + 3,
@@ -26,8 +26,8 @@ let filmesAdicionados = [
         genero: "Distopia",
         descricao: "Refugiada no Distrito 13, Katniss assume o papel de símbolo da resistência e lidera a luta contra a opressão da Capital.",
         imagem: "https://m.media-amazon.com/images/S/pv-target-images/e0f41d9eb424509cfc055a786aad5b67c7dc5ca3f5288cfa932dbbadd52d2ed2.jpg",
-        gostei: 0,
-        naoGostei: 0
+        gostei: 12,
+        naoGostei: 2
     },
     {
         id: Date.now() + 4,
@@ -35,7 +35,7 @@ let filmesAdicionados = [
         genero: "Distopia",
         descricao: "Katniss e seus aliados partem em uma missão final para derrubar o Presidente Snow e libertar Panem de sua tirania.",
         imagem: "https://s2.glbimg.com/kJwok1FFClbENx6kWwLv_bo1Poc=/e.glbimg.com/og/ed/f/original/2015/06/09/katniss.jpg",
-        gostei: 0,
+        gostei: 12,
         naoGostei: 0
     },
     {
@@ -44,8 +44,8 @@ let filmesAdicionados = [
         genero: "Distopia",
         descricao: "Décadas antes de Katniss, o jovem Coriolanus Snow vê nos Jogos Vorazes sua chance de ascender ao poder ao ser mentor de uma tributo do empobrecido Distrito 12.",
         imagem: "https://m.media-amazon.com/images/S/pv-target-images/7d10fd628b1c11968b83dca8e257584a260838148f120c18a112370ccd07e455._SX1080_FMjpg_.jpg",
-        gostei: 0,
-        naoGostei: 0
+        gostei: 20,
+        naoGostei: 3
     }
 ];
 
