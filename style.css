@@ -1,0 +1,233 @@
+/*Fonte*/
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+
+/*Reset*/
+* {
+    font-family: "DM Sans", sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #d9d8d9;
+    color: #121212;
+}
+
+/*Menu*/
+#menu {
+    padding: 25px 5%;
+    display: flex;
+    justify-content: space-between;
+    background-color: #28193d;
+    color: #fff;
+}
+
+#titulo-pagina {
+    display: flex;
+    justify-content: space-between;
+    margin: 2% 8% 2% 5%;
+}
+
+/*Botões Gerais*/
+#abrir-modal,
+#botao-valida-imagem,
+#botao-adicionar {
+    border-radius: 5px;
+    border-style: solid;
+    color: #fff;
+    font-weight: 600;
+    cursor: pointer;
+    transition: .3s;
+}
+
+#abrir-modal {
+    width: 140px;
+    height: 40px;
+    background-color: #28193d;
+    border-color: transparent;
+    font-size: 1em;
+}
+
+#abrir-modal:hover {
+    background-color: #d9d8d9;
+    color: #28193d;
+}
+
+#botao-valida-imagem {
+    width: 120px;
+    background-color: #121212;
+    border-color: #121212;
+    border-radius: 0 5px 5px 0;
+}
+
+#botao-adicionar {
+    background-color: #68507b;
+    border-style: none;
+}
+
+#botao-adicionar:hover {
+    background-color: #28193d;
+}
+
+/*Modal Adicionar*/
+.modal-adicionar {
+    width: 100%;
+    min-height: 100vh;
+    background: rgba(0,0,0,0.5);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    left: 0;
+    top: 0;
+}
+
+.adicionar {
+    padding: 50px;
+    display: flex;
+    gap: 30px;
+    background-color: #fff;
+    border-radius: 10px;
+}
+
+/*Inputs*/
+.input-adicionar,
+.input-adicionar-imagem {
+    display: flex;
+    flex-direction: column;
+    margin-top: 40px;
+}
+
+.input-adicionar input,
+.input-adicionar-imagem input[type="text"] {
+    padding-left: 10px;
+    border-radius: 5px;
+    height: 40px;
+    border-style: none;
+    background-color: #d9d8d9;
+}
+
+.input-adicionar input {
+    margin-bottom: 30px;
+}
+
+.input-adicionar-imagem input[type="text"] {
+    width: 180px;
+    background-color: #d9d8d9;
+    border-style: none;
+    border-radius: 5px 0 0 5px;
+}
+
+.input-adicionar-imagem {
+    margin-top: 30px;
+}
+
+.input-adicionar-imagem input[type="button"] {
+    height: 40px;
+}
+
+/*Pré-visualização da Imagem*/
+#carrega-imagem {
+    width: 300px;
+    height: 200px;
+    margin: 10px 0 30px 0;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+#validar-imagem {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+/*Listagem de Filmes*/
+.filmes-series {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 15px;
+    margin: 2% 5%;
+}
+
+.exibe {
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    height: 450px;
+    background-color: #fff;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.imagem-filme {
+    width: 400px;
+    height: 220px;
+    object-fit: cover;
+}
+
+/*Texto*/
+.titulo-item {
+    margin: 10px 0 0 15px;
+    width: 350px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.genero-item {
+    margin-left: 15px;
+    font-size: 0.9em;
+}
+
+.descricao-item {
+    margin: 5px 15px 10px 15px;
+    font-size: 0.9em;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+/*Botões de Avaliação*/
+.container-avalicao {
+    display: flex;
+    gap: 10px;
+    margin: auto 0 5px 15px;
+}
+
+.botao-gostei,
+.botao-nao-gostei {
+    width: 100px;
+    height: 30px;
+    border-radius: 5px;
+    color: #fff;
+    border-style: none;
+    cursor: pointer;
+}
+
+.botao-gostei {
+    background-color: #46315c;
+}
+
+.botao-nao-gostei {
+    background-color: #68507b;
+}
+
+.total-votos {
+    margin-left: 20px;
+    margin-bottom: 10px;
+    font-size: 0.8em;
+}
+
+/*Mensagens de Erro*/
+#erro-imagem,
+#erro {
+    display: none;
+    width: 300px;
+    white-space: wrap;
+    font-size: 0.9em;
+    text-align: center;
+    margin-bottom: 12px;
+}

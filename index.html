@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>CineChoice</title>
+</head>
+<body>
+    <!-- Cadastrar Filme ou Série -->
+    <nav id="menu">
+        <h1>CineChoice</h1>
+        <button id="abrir-modal">Adicionar Novo</button>
+    </nav>
+    <div id="titulo-pagina">
+        <h2>Filmes e séries adicionados</h2>
+        <p id="total-votos-geral">Total de votos: </p>
+    </div>
+    <div class="modal-adicionar">
+        <div class="adicionar">
+            <div>
+                <h2 id="titulo-adicionar">Adicionar Novo Filme ou Série</h2>
+                <div class="input-adicionar">
+                    <label for="nomeFilmeSerie">Título:* </label>
+                    <input id="adicionar-titulo" type="text" placeholder="Nome do filme/série: ">
+
+                    <label for="generoFilmeSerie">Gênero:* </label>
+                    <input id="adicionar-genero" type="text" placeholder="Gênero do filme/série:">
+
+                    <label for="generoFilmeSerie">Descrição: </label>
+                    <input id="adicionar-descricao" type="text" placeholder="Descrição do filme/série:">
+                    
+
+                    <p id="erro">Por favor, preencha todos os campos obrigatórios!</p>
+                </div>
+            </div>
+
+            <div class="input-adicionar-imagem">
+                <label for="imagemFilmeSerie">Adicione uma imagem:* </label>
+                <img id="carrega-imagem" src="carrega-imagem.png" alt="">
+                <div id="validar-imagem">
+                    <input id="adicionar-imagem" type="text" placeholder="URL da imagem: ">
+                    <input id="botao-valida-imagem" type="button" value="Validar URL">
+                </div>
+                <p id="erro-imagem">A URL inserida é inválida, tente adicionar outra imagem</p>
+                <input id="botao-adicionar" type="button" value="Adicionar">
+            </div>
+        </div>
+    </div>
+
+    <div class="filmes-series"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
