@@ -3,7 +3,7 @@ let lista = JSON.parse(localStorage.getItem("filmes")) || [];
 
 let filmesAdicionados = [
     {
-        id: Date.now() + 1,
+        id: 1,
         titulo: "Jogos Vorazes",
         genero: "Distopia",
         descricao: "Em um futuro distópico, Katniss Everdeen se voluntaria para participar dos Jogos Vorazes, uma competição mortal televisionada onde jovens lutam até a morte para entreter a elite da Capital.",
@@ -12,7 +12,7 @@ let filmesAdicionados = [
         naoGostei: 2
     },
     {
-        id: Date.now() + 2,
+        id: 2,
         titulo: "Jogos Vorazes: Em chamas",
         genero: "Distopia",
         descricao: "Após vencer os Jogos, Katniss e Peeta tornam-se símbolos de rebelião e são forçados a participar de uma edição especial que ameaça reacender a revolta nos distritos.",
@@ -21,7 +21,7 @@ let filmesAdicionados = [
         naoGostei: 5
     },
     {
-        id: Date.now() + 3,
+        id: 3,
         titulo: "Jogos Vorazes: a Esperança Parte 1",
         genero: "Distopia",
         descricao: "Refugiada no Distrito 13, Katniss assume o papel de símbolo da resistência e lidera a luta contra a opressão da Capital.",
@@ -30,7 +30,7 @@ let filmesAdicionados = [
         naoGostei: 2
     },
     {
-        id: Date.now() + 4,
+        id: 4,
         titulo: "Jogos Vorazes: a Esperança Parte 2",
         genero: "Distopia",
         descricao: "Katniss e seus aliados partem em uma missão final para derrubar o Presidente Snow e libertar Panem de sua tirania.",
@@ -39,7 +39,7 @@ let filmesAdicionados = [
         naoGostei: 0
     },
     {
-        id: Date.now() + 5,
+        id: 5,
         titulo: "Jogos Vorazes: A Cantiga dos Pássaros e das Serpentes",
         genero: "Distopia",
         descricao: "Décadas antes de Katniss, o jovem Coriolanus Snow vê nos Jogos Vorazes sua chance de ascender ao poder ao ser mentor de uma tributo do empobrecido Distrito 12.",
