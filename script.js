@@ -70,13 +70,12 @@ const validaUrlImg = url => (url.match(/\.(jpeg|jpg|png)$/i) != null);
 
 const renderizarFilmes = () => {
     filmesSeries.innerHTML = "";
-    let titulo = document.querySelector('#adicionar-titulo').value = "";
-    let genero = document.querySelector('#adicionar-genero').value = "";
-    let descricao = document.querySelector('#adicionar-descricao').value = "";
-    let imagem = document.querySelector('#adicionar-imagem').value = "";
+    document.querySelector('#adicionar-titulo').value = "";
+    document.querySelector('#adicionar-genero').value = "";
+    document.querySelector('#adicionar-descricao').value = "";
+    document.querySelector('#adicionar-imagem').value = "";
 
     carregaImagem.src = "carrega-imagem.png";
-
 
 
     let totalGostei = 0;
